@@ -1,6 +1,7 @@
 /**
  * Snake game created with plain JavaScript by Ibrahim fariat.
  * Follow me if you like it!
+ * Code changes made by furry 19
  **/
 
 let dom_replay = document.querySelector("#replay");
@@ -381,11 +382,7 @@ function checkCookieConsent() {
   let consent = getCookie("cookieConsent");
   
   if (!consent) {
-    let userConsent = confirm("我们使用 Cookie 来存储您的游戏最高分数、访问记录等信息。您是否同意使用 Cookie？");
-
-    if (userConsent) {
-      setCookie("cookieConsent", "true", 365);
-    }
+    setCookie("cookieConsent", "true", 365);
   }
 }
 
